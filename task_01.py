@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""This is the week 6 synthesizing task with a party function"""
+"""This is the week 6 synthesizing task with a party function - Retry 1"""
 
 
 def get_party_stats(families, table_size=6):

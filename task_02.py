@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """This is the second week 6 synthesizing task with a function to create a
-   basic reminder email text string for each"""
+   basic reminder email text string for each - Retry 1"""
 
 REMINDER_EMAIL = "Dear {0},\nI look forward to meeting with you on " \
                  "{1}.\nBest,\nMe"
