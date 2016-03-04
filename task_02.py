@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Creating an email template for appointments."""
 
-EMAIL_BODY = 'Dear {0},\nI look forward to meeting with you on {1}st,\nMe'
+EMAIL_BODY = 'Dear {0},\nI look forward to meeting with you on {1}.\nBest,\nMe'
 
 
 def prepare_email(appointments):
