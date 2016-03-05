@@ -22,7 +22,7 @@ def prepare_email(appointments):
     """
 
     messages = []
-    email = 'Dear {},\nI look forward to meeting with you on {}.\nBest,\nMe'
+    email = 'Dear {0},\nI look forward to meeting with you on {1}.\nBest,\nMe'
     for email_body in appointments:
         messages.append(email.format(email_body[0], email_body[1]))
     return messages
