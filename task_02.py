@@ -17,7 +17,8 @@ def prepare_email(appointments):
 
     Example:
         >>> prepare_email([('Jennifer', '2015'), ('James', 'March 16')]
-        ['Dear Jennifer,\nI look forward to meeting with you on 2015.\nBest,\nMe',
+        ['Dear Jennifer,\nI look forward to meeting with you on 2015.\nBest,
+	\nMe',
         'Dear James,\nI look forward to meeting you on March 16.\nBest\nMe']
     """
 
