@@ -19,7 +19,8 @@ def prepare_email(appointments):
         \nBest, \nMe']
 
         >>> prepare_email([('Bill', 'Today'), ('C.W.', '3/6 at 2P')])
-        ['Dear Bill,\nI look forward to meeting with you on Today.\nBest,        \nMe', 'Dear C.W.,\nI look forward to meeting with you on 3/6 at 2P.
+        ['Dear Bill,\nI look forward to meeting with you on Today.\nBest,
+        \nMe', 'Dear C.W.,\nI look forward to meeting with you on 3/6 at 2P.
         \nBest,\nMe']
     """
     mess = 'Dear {0},\nI look forward to meeting with you on {1}.\nBest,\nMe'
