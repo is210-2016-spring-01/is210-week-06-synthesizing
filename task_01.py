@@ -13,15 +13,21 @@ def get_party_stats(families, table_size):
         mxed: Families and the tables they sit at.
 
     Examples:
-        
+    >>> get_party_stats(['Jan'], ['Jen', 'Jess'], ['Jem', 'Jack', 'Janis']])
+    (6, 3)
+
+    >>> get_party_stats(['Jan'], ['Jen', 'Jess'], ['Jem', 'Jack', 'Janis']], 2)
+    (6, 4)
+
     """
-    for i in 'families:
-        print total
+    for person in families:
+        person += len(families)
 
-    for i in table_size:
-        print total
-    
+    for table in table_size:
+        tables = -len(families) // table_size
+    Return (people_per_table, number_of_tables)
 
- 
 
-    
+
+
+
