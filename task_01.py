@@ -19,7 +19,10 @@ def get_party_stats(families, table_size=6):
         'Janis']])
         '(6, 3)'
     """
+    table_num = 0
+    people_num = 0
+
     for people in families:
-        tab_count = -(-len(people) // table_size)
-        people_count = len(families)
-        return people_count, tab_count
+        table_num += -(-len(people)//table_size)
+        people_num += len(people)
+    return people_num, table_num

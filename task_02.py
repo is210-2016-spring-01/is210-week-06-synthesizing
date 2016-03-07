@@ -2,7 +2,6 @@
 # _*_ coding: utf-8 _*_
 """Task 2 file."""
 
-
 email = 'Dear {0},\nI look forward to meeting with you on {1}.\nBest,\nMe'
 
 
@@ -21,6 +20,7 @@ def prepare_email(appointments):
         '['Dear Jen,\nI look forward to meeting with you on 2015.\nBest,\nMe',
         'Dear Max,\nI look forward to meeting with you on March 3.\nBest,\nMe']
     """
-    for patient in email:
-        return [email.format(appointments[0][0], appointments[0][1]),
-                email.format(appointments[1][0], appointments[1][1])]
+    info = []
+    for patient in appointments:
+        info.append(email.format(patient[0], patient[1]))
+    return info
