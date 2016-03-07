@@ -2,12 +2,14 @@
 # -*- coding: utf-8 -*-
 """This docstring prepares an e-mail."""
 
+CONTENT = 'Dear {0},\nI look forward to meeting with you on {1}.\nBest,\nMe'
 
-def prepare_email(appointments=('name', 'appointment_time')):
+
+def prepare_email(appointments):
     """Function creates a list of two-item tiples.
 
     Args:
-        appointments(tuple): client's names and appointment time.
+        appointments(list): client's names and appointment time.
 
     Returns:
         client's name
@@ -19,4 +21,5 @@ def prepare_email(appointments=('name', 'appointment_time')):
         'Dear Max,\nI look forward to meeting you on March 3.\nBest\nMe']
     """
     for client in appointments:
-        print 'Dear{},\nI look forward to meeting witth you on{}.\nBest,\nMe'
+        mass_email.append(CONTENT.format(candidate[0], candidate[1]))
+    return mass_email
