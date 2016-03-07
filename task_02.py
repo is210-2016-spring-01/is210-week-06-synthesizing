@@ -21,5 +21,5 @@ def prepare_email(appointments):
         'Dear Max,\nI look forward to meeting you on March 3.\nBest\nMe']
     """
     for client in appointments:
-        mass_email.append(CONTENT.format(candidate[0], candidate[1]))
-    return mass_email
+         appointments.append(CONTENT.format(candidate[0], candidate[1]))
+    return appointments
