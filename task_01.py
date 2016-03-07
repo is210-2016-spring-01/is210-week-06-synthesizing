@@ -21,15 +21,15 @@ def get_party_stats(families, table_size=6):
         >>> get_party_stats(['Jan'], ['Jen', 'Jess'], ['Jem', 'Jack', 'Janis']])
         (6, 3)
 
-        >>> get_party_stats(['Jan'], ['Jen', 'Jess'], ['Jem', 'Jack', 'Janis']], 2)
+        >>> get_party_stats(['Jan'], ['Jen', 'Jess'], ['Jem', 'Jack',
+        'Janis']], 2)
         (6, 4)
     """
 
     guests = 0
     tables = 0
-    
-    for family in families:
-        guests += len(family) #how many guests
-        tables  += -(-len(family)//table_size)
-    return guests, tables
 
+    for family in families:
+        guests += len(family)  #how many guests
+        tables += -(-len(family)//table_size)
+    return guests, tables
