@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """This docstring creates seating charts."""
 
-def get_party_stats(families, table_size):
+def get_party_stats(families, table_size=6):
     """This function organizes seating.
 
     Arg:
-        families (str): A list of names.
-        table_size (int): The maximum number of seats at each table.
+        families (list): A list of names.
+        table_size (integer): The maximum number of seats at each table.
 
     Returns:
         mxed: Families and the tables they sit at.
