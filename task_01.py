@@ -30,6 +30,6 @@ def get_party_stats(families, table_size=6):
     tables = 0
 
     for family in families:
-        guests += len(family)  #how many guests
+        guests += len(family)
         tables += -(-len(family)//table_size)
     return guests, tables
